@@ -1,7 +1,6 @@
 var mbaas = require('fh-mbaas-express');
 var express = require('express');
-var cloudRouter = require('./lib/cloud_router
-	.js');
+var cloudRouter = require('./lib/cloud_router.js');
 
 var app = express();
 app.use('/sys', mbaas.sys(cloudRouter));

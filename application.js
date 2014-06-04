@@ -7,7 +7,7 @@ app.use('/sys', mbaas.sys(cloudRouter));
 app.use('/mbaas', mbaas.mbaas);
 app.use('/cloud', mbaas.cloud(cloudRouter));
 
-app.use(mbaas.fhmiddleware());
+// app.use(mbaas.fhmiddleware());
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {

@@ -1,25 +1,8 @@
-# FeedHenry Hello World MBaaS Server
+FhPortal_v3 Cloud 
+==========================
 
-This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
+# FeedHenry Portal MBaaS Server
 
-# Group Hello World API
+This is the cloud side of the FhPortal app.
 
-# hello [/hello]
-
-'Hello world' endpoint.
-
-## hello [POST] 
-
-'Hello world' endpoint.
-
-+ Request (application/json)
-    + Body
-            {
-              "hello": "world"
-            }
-
-+ Response 200 (application/json)
-    + Body
-            {
-              "msg": "Hello world"
-            }
+* This app uses heavy use of deferred promises.

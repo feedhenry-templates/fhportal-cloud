@@ -5,6 +5,7 @@
         "fh-nodeapp": "*",
         "winston": "*",
         "q": "*",
+        "cors": "*",
         "superagent": "*",
         "request": "~2.27.0",
         "express": "3.3.4",

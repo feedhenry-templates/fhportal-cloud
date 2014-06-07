@@ -1,8 +1,16 @@
 var mbaas = require('fh-mbaas-express');
 var express = require('express');
+var cors = require('cors');
+
+// include the bread and butter of the app
 var cloudRouter = require('./lib/cloud_router.js');
 
 var app = express();
+
+// Allow cross origin scripting
+app.use(cors());
+
+
 app.use('/sys', mbaas.sys(cloudRouter));
 app.use('/mbaas', mbaas.mbaas);
 app.use('/cloud', mbaas.cloud(cloudRouter));

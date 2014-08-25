@@ -1,4 +1,5 @@
-var mbaas = require('fh-mbaas-express');
+var $fh = require('fh-mbaas-api');
+var mbaas = $fh.mbaasExpress();
 var express = require('express');
 var cors = require('cors');
 
@@ -10,12 +11,11 @@ var app = express();
 // Allow cross origin scripting
 app.use(cors());
 
-
 app.use('/sys', mbaas.sys(cloudRouter));
 app.use('/mbaas', mbaas.mbaas);
 app.use('/cloud', mbaas.cloud(cloudRouter));
 
-// app.use(mbaas.fhmiddleware());
+app.use(mbaas.fhmiddleware());
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {

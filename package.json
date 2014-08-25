@@ -2,15 +2,13 @@
   "name": "fh-app",
   "version": "0.1.0",
   "dependencies": {
-    "fh-nodeapp": "*",
     "winston": "*",
     "q": "*",
-    "cors": "*",
+    "cors": "~2.2.0",
     "superagent": "*",
-    "request": "~2.27.0",
-    "express": "3.3.4",
-    "fh-mbaas-api": "~3.0.0",
-    "fh-mbaas-express": "~3.0.0"
+    "request": "~2.40.0",
+    "express": "4.0.0",
+    "fh-mbaas-api": "~4.0.0"
   },
   "devDependencies": {
     "grunt-contrib-watch": "latest",
